@@ -1,15 +1,14 @@
 $(document).ready(function() {
-var topics = ["Keanu Reeves", "Bruce Lee", "Chuck Norris", "Jennifer Lawerence", "Johnny Depp"]; 
+var topics = ["Birds", "Anime", "Chuck Norris", "Star Wars", "Donald Trump"]; 
 var results;
 
 
 function displaygifDiv(){
 	$("#gifs-appear-here").empty();
-	var actor = $(this).attr("data-name");
+	var x = $(this).attr("data-name");
 
-	
 	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        actor + "&api_key=dc6zaTOxFJmzC&limit=10";
+        x + "&api_key=dc6zaTOxFJmzC&limit=10";
         
     $.ajax({
     	url: queryURL,

@@ -6,17 +6,21 @@ body {
 }
 
 .jumbotron h1 {
-	color: #FFFFFF;
+	color: #B0CADA;
 	font-weight: bold;
+	font-family: 'Alfa Slab One', cursive;
 }
 
 .jumbotron p {
-	color: #FFFFFF;
+	color: #B0CADA;
 	font-weight: bold;
 	font-size: 25px;
+	font-family: 'Alfa Slab One', cursive;
 }
 
 .jumbotron {
-	background-image: url('..assets/images/');
+	background-image: url('../images/abstract-technology-concept-industrial-web-header-banner-vector-template-bridge-landscape-circuit-board-gears-79083330.jpeg');
+
 	background-size: contain;
+
 }
