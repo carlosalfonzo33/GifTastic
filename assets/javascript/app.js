@@ -7,8 +7,7 @@ function displaygifDiv(){
 	$("#gifs-appear-here").empty();
 	var x = $(this).attr("data-name");
 
-	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        x + "&api_key=dc6zaTOxFJmzC&limit=10";
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q="+x+"&api_key=dc6zaTOxFJmzC&limit=10";
         
     $.ajax({
     	url: queryURL,
@@ -60,7 +59,7 @@ function displaygifDiv(){
 
             
             var a = $("<button>") 
-            a.addClass("actors"); 
+            a.addClass("buttons"); 
             a.attr("data-name", topics[i]); 
             a.text(topics[i]); 
             $("#buttonsView").append(a); 
@@ -84,7 +83,7 @@ function displaygifDiv(){
     })
 
 
-    $(document).on("click", ".actors", displaygifDiv);
+    $(document).on("click", ".buttons", displaygifDiv);
 
     renderButtons();
 });
