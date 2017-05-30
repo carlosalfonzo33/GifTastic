@@ -23,11 +23,11 @@ function displaygifDiv(){
     			     var rating = results[i].rating;
     			         var p = $("<p>").text("Rating: " + rating);
     			
-                var actorImage = $("<img>");
-    			actorImage.attr("src", results[i].images.fixed_height_still.url);
-    			actorImage.attr("data-still", actorImage.attr("src"));
-    			actorImage.attr("data-animate", results[i].images.fixed_height.url);
-    			actorImage.on("click", function(){
+                var gifImage = $("<img>");
+    			gifImage.attr("src", results[i].images.fixed_height_still.url);
+    			gifImage.attr("data-still", gifImage.attr("src"));
+    			gifImage.attr("data-animate", results[i].images.fixed_height.url);
+    			gifImage.on("click", function(){
 
     				if($(this).attr("src") === $(this).attr("data-still")){
                         
@@ -40,7 +40,7 @@ function displaygifDiv(){
     			});
     			gifDiv.addClass("thumbnail");
     			gifDiv.append(p);
-    			gifDiv.append(actorImage);
+    			gifDiv.append(gifImage);
     			$("#gifs-appear-here").prepend(gifDiv);
     	}
     });
