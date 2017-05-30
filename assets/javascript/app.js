@@ -19,7 +19,6 @@ function displaygifDiv(){
     	results = response.data;
 
     	for (var i = 0; i < results.length; i++) {
-    		if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
     			var gifDiv = $("<div class='item'>");
     			     var rating = results[i].rating;
     			         var p = $("<p>").text("Rating: " + rating);
@@ -43,7 +42,6 @@ function displaygifDiv(){
     			gifDiv.append(p);
     			gifDiv.append(actorImage);
     			$("#gifs-appear-here").prepend(gifDiv);
-    		}
     	}
     });
 
