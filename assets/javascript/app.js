@@ -1,5 +1,5 @@
 $(document).ready(function() {
-var topics = ["Birds", "Anime", "Chuck Norris", "Star Wars", "Donald Trump"]; 
+var topics = ["Birds", "Anime", "Chuck Norris", "Star Wars", "Donald Trump", "Cats", "Prank", "80's Cartoons", "Toys", "Dogs"]; 
 var results;
 
 
