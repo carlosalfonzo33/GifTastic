@@ -63,7 +63,7 @@ function displaygifDiv(){
 
 
     $("#add-gif").on("click", function(){
-        event.preventDefault();
+        //event.preventDefault();
 
         var actor = $("#gif-input").val().trim();
         console.log(actor);
