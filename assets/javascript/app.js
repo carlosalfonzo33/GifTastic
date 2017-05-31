@@ -65,11 +65,11 @@ function displaygifDiv(){
     $("#add-gif").on("click", function(){
         //event.preventDefault();
 
-        var actor = $("#gif-input").val().trim();
-        console.log(actor);
+        var gifInput = $("#gif-input").val().trim();
+        console.log(gifInput);
         $("#gif-input").val(" ");
 
-        topics.push(actor);
+        topics.push(gifInput);
         console.log(topics);
         
         renderButtons();
