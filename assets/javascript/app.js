@@ -63,18 +63,23 @@ function displaygifDiv(){
 
 
     $("#add-gif").on("click", function(){
-        //event.preventDefault();
+        event.preventDefault()
 
         var gifInput = $("#gif-input").val().trim();
+        if (gifInput !==  "") {
+           event.preventDefault()
+        
         console.log(gifInput);
         $("#gif-input").val(" ");
 
         topics.push(gifInput);
+
         console.log(topics);
         
         renderButtons();
 
         return false;
+    }
     })
 
 
