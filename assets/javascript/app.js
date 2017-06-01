@@ -67,7 +67,6 @@ function displaygifDiv(){
 
         var gifInput = $("#gif-input").val().trim();
         if (gifInput !==  "") {
-           event.preventDefault()
         
         console.log(gifInput);
         $("#gif-input").val(" ");
