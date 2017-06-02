@@ -62,8 +62,8 @@ function displaygifDiv(){
     }
 
 
-    $("#add-gif").on("click", function(){
-        //event.preventDefault()
+    $("#add-gif").on("click", function(event){
+        event.preventDefault()
 
         var gifInput = $("#gif-input").val().trim();
         if (gifInput !==  "") {
